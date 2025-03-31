@@ -1,0 +1,33 @@
+Using logfiles ['/home/min/a/devlinc/Documents/ECE60827/hardware-sim-assgn-2/hardware-simulation-assignment-2-texashodlr/util/job_launching/../job_launching/logfiles/sim_log.sass-run.25.03.29-Saturday.txt']
+procman.id	Node                          	App                 	AppArgs             	Version             	Config    	RunningTime    	Mem   	JobStatus                     	Basic GPGPU-Sim Stats                             	
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+243       	qstruct.ecn.purdue.edu        	b+tree-rodinia-3.1  	file___data_mil_txt_	b+tree-rodinia-3.1.a	QV100-SASS	2:08:38        	3 B   	COMPLETE_NO_OTHER_INFO        	SIMRATE_IPS=52 K	SIM_TIME=2 hrs, 9 min, 58 sec (7798 sec)	TOT_IPC=5 K	TOT_INSN=407 M	TOT_CYCLE=81 K	
+Failed to import the site module
+Traceback (most recent call last):
+  File "/home/min/a/devlinc/Documents/ECE60827/hardware-sim-assgn-2/hardware-simulation-assignment-2-texashodlr/util/job_launching/job_status.py", line 330, in <module>
+    job_status = get_procman_status( jobId, node_details )
+  File "/home/min/a/devlinc/Documents/ECE60827/hardware-sim-assgn-2/hardware-simulation-assignment-2-texashodlr/util/job_launching/job_status.py", line 21, in get_procman_status
+    out,err = subprocess.Popen([os.path.join(this_directory, "procman.py"), "-j", jobId],stdout=PIPE).communicate()
+  File "/usr/lib64/python3.6/subprocess.py", line 850, in communicate
+    stdout = self.stdout.read()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/site.py", line 564, in <module>
+    main()
+  File "/usr/lib64/python3.6/site.py", line 550, in main
+    known_paths = addusersitepackages(known_paths)
+  File "/usr/lib64/python3.6/site.py", line 285, in addusersitepackages
+    addsitedir(user_site, known_paths)
+  File "/usr/lib64/python3.6/site.py", line 207, in addsitedir
+    addpackage(sitedir, name, known_paths)
+  File "/usr/lib64/python3.6/site.py", line 168, in addpackage
+    exec(line)
+  File "<string>", line 1, in <module>
+  File "/usr/lib64/python3.6/types.py", line 171, in <module>
+    import functools as _functools
+  File "/usr/lib64/python3.6/functools.py", line 403, in <module>
+    _CacheInfo = namedtuple("CacheInfo", ["hits", "misses", "maxsize", "currsize"])
+  File "/usr/lib64/python3.6/collections/__init__.py", line 429, in namedtuple
+    exec(class_definition, namespace)
+  File "<string>", line 1, in <module>
+KeyboardInterrupt
